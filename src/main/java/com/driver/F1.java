@@ -4,7 +4,7 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-        super(name,4,2,4,isManual,"racing",2);
+        super(name,4,4,6,isManual,"racing",1);
 
     }
 
@@ -22,7 +22,7 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
 
-        if (newSpeed <= 0) {
+        if (newSpeed == 0) {
             //Stop the car, set gear as 1
             stop();
             changeGear(1);
